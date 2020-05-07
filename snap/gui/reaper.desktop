@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=REAPER
+Comment=REAPER
+Categories=Audio;Video;AudioVideo;AudioVideoEditing;Recorder;
+Exec=reaper
+Icon=${SNAP}/meta/gui/reaper.png
+MimeType=application/x-reaper-project;application/x-reaper-project-backup;application/x-reaper-theme
+StartupWMClass=REAPER
