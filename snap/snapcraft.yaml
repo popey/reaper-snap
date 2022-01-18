@@ -1,6 +1,6 @@
 name: reaper
-base: core18 # the base snap is the execution environment for this snap
-version: '609' # just for humans, typically '1.2+git' or '1.3.2'
+base: core20 # the base snap is the execution environment for this snap
+version: '621' # just for humans, typically '1.2+git' or '1.3.2'
 summary: Reaper
 description: |
   This is my-snap's description. You have a paragraph or two to tell the
@@ -27,10 +27,10 @@ parts:
 
 apps:
   reaper:
-    extensions: [gnome-3-28]
-    command: reaper
+    extensions: [gnome-3-38]
+    command: REAPER/reaper
     environment:
-      LD_LIBRARY_PATH: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/pulseaudio:$LD_LIBRARY_PATH
+      LD_LIBRARY_PATH: $SNAP/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/pulseaudio
     plugs:
       - audio-playback
       - audio-record
